@@ -15,6 +15,11 @@ import {
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Asset Imports
+import heroTech from './assets/hero-tech.png'
+import mockup1 from './assets/mockup-1.png'
+import mockup2 from './assets/mockup-2.png'
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -184,7 +189,7 @@ const Problem = () => {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-red-500/20 to-violet-500/20 rounded-3xl blur-2xl -z-10" />
-            <img src="hero_abstract_tech_1777297564991.png" alt="Tech Visual" className="rounded-3xl border border-white/10 shadow-2xl" />
+            <img src={heroTech} alt="Tech Visual" className="rounded-3xl border border-white/10 shadow-2xl" />
           </div>
         </div>
       </div>
@@ -267,7 +272,7 @@ const Benefits = () => {
               </div>
             </div>
             <div className="relative">
-              <img src="landing_page_mockup_1_1777297580114.png" alt="ROI" className="rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500" />
+              <img src={mockup1} alt="ROI" className="rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500" />
             </div>
           </div>
         </div>
